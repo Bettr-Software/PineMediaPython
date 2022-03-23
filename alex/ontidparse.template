@@ -1,0 +1,4 @@
+Value Ontid (\d)
+
+Start
+  ^${Ontid}@\d\/\d\/\d.gpon -> Record

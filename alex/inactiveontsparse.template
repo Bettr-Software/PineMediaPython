@@ -1,0 +1,7 @@
+Value Shelf (\d)
+Value Slot (\d)
+Value Port (\d)
+Value Serial ([A-Z]{4}[a-zA-Z0-9]{8})
+
+Start
+  ^${Shelf}\/${Slot}\/${Port}\s{5}${Serial} -> Record
