@@ -1,7 +1,10 @@
-[label app.py]
 from flask import Flask
+from flask import request
+
 app = Flask(__name__)
 
-@app.route('/')
+
+@app.route('/', methods=['POST'])
 def hello_world():
-    return 'Hello Sammy!'
+    serial = request.form.get('serial_number')
+    return 'Hello PineMedia!' + serial
